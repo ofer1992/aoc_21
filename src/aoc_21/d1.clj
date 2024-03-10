@@ -2,18 +2,6 @@
   (:require [clojure.string :as str]
             [utils]))
 
-(def example
-  "199
-200
-208
-210
-200
-207
-240
-269
-260
-263
-")
 
 (defn process-input [s]
   (let [splitted (str/split s #"\n")]
@@ -37,6 +25,18 @@
     (println (str "part 2 solution: " part2))))
 
 (comment
+  (def example
+    "199
+200
+208
+210
+200
+207
+240
+269
+260
+263
+")
   (p2 (utils/get-problem-input 1))
   (def x (process-input example))
   (map #(apply + %) (partition 3 1 x))

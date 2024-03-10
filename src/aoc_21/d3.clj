@@ -99,4 +99,5 @@
   tmp
   (reductions #(filter-criteria %1 co2-critera %2) tmp (range (count (first tmp))))
   (p2 (utils/get-problem-input 3))
+  (fr)
   )
